@@ -23,28 +23,41 @@
             <div>
                 <h1 class="font-monospace text-center">Here's your random Pokémon!</h1>
             </div>
-            <div class="mx-auto d-block text-center font-monospace">
-                <h2 id="num"></h2>
-                <div id="img"></div>
-                <h2 id="name" class="text-capitalize"></h2>
+            <div class="d-block text-center font-monospace">
+                <h2 id="pokemon-number"></h2>
+                <div id="pokemon-sprite"></div>
+                <h2 id="pokemon-name" class="text-capitalize"></h2>
+                <h2 id="pokemon-type"></h2>
+                <hr>
+                <div id="button1">
+                    <button class="favorite styled" type="button" id="newPokemonBtn">Generate a new random PKMN</button>
+                </div>
+                <hr>
             </div>
         </div>
     </div>
 
     <div class="container">
         <p class="text-left font-monospace">
-        Keep this in mind when using this site...<br>
-        1. Location is needed to display your weather conditions based on your Internet Service Provider.<br>
-        2. Refresh the site to generate a new pokémon!<br>
-        3. The site is currently generating pokémon's from Gen1 till Gen2. (1-251)<br>
-        Bonus: (Mouse required) If you mouse over the image of the pokémon, it will transform into pixels!<br>
+        Keep this in mind when using this site:<br>
+        Location is needed to display your weather conditions based on your Internet Service Provider.<br>
+        The site is currently generating pokémon's from Gen1 till Gen2. (1-251)<br>
+        Bonus: (Mouse required) If you mouse over the image of the pokémon, it will show it's shiny form!<br>
         All the code is publicly available at my <a href="https://github.com/Nexus-Hub">GitHub</a> under the project 'Pokemon-Random'<br><br>
-        Created and published on 01/01/2025 by 'cadmnexus' on Discord</p>
+        Created and published on 01/01/2025 by 'cadmnexus'<br><br>
+
+        <br> Pending changes that we want to make (bad Spanglish incoming): 
+        <br>- Limpiar el código (duplicado que hay al final del código).
+        <br>- Cambiar la palabra del elemento a un icono o imagen, ejemplo (fire -> fire.png ó water -> water.png) con imagenes hosteadas de manera local sin API.
+        <br>- Hacer de manera dinamica la cantidad de pokemones que hay, actualmente van del 1 al 251, (ejemplo: formulario en el backend con la generación que genera el pokemon, generacion 1 y 2 son del 1 al 251, generacion 3 y 4 son del x1 al y1).
+        <br>- Mostrar (renderizar) el pais en el HTML con la API de Weather con el fin de saber si la VPN está funcionando.<br><br>
+
+    Last update: 02/11/2025 in collaboration with 'redark_ aka RedarkMagician at GitHub'
+</p>
     </div>
     <div>
 
     <script src="./js/scripts.js"></script>
-    <script src="./js/userLocation.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
